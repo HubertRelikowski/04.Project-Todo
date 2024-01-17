@@ -17,7 +17,7 @@
 
         for(const task of tasks) {
             htmlString += `
-                <li>
+                <li ${task.done ? "style=\"text-decoration:line-through\"" : ""  }>
                     ${task.content}
                 </li>
             `;
